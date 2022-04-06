@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>ErayBD's Blog Page</title>
+</head>
+
+<body>
+
+    <!--TELESCOPE LOGO-->
+    <div class="logo">
+        <a href="index.html"><img id="telescope"
+        src="images/telescope.png" alt="telescope picture" title="Go to Main"></a>
+    </div>
+
+    <!--MENU-->
+    <div class="menu">
+        <a href="index.html"><h1 title="Go to Main" style="margin-left: 12%;" id="menuIn">Main</h1></a>
+        <a href="topics.html"><h1 title="Go to Topics" style="margin-left: 30%;" id="menuIn">Topics</h1></a>
+        <a href="quiz.html"><h1 title="Go to Quiz" style="margin-left: 50%;" id="menuIn">Quiz</h1></a>
+        <a href="contact.html"><h1 title="Go to Contact" style="margin-left: 67%;" id="menuIn">Contact</h1></a>
+    </div>
+    
+    
+
+    <!--CONTACT-->
+    <div class="content_first">
+        
+        <div class="contact" style="text-align: center; font-size: 1vw;">
+            <h1 style="padding: 0px; margin: 0px; margin-top: 2%; color: goldenrod; padding-bottom: 2%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Contact Form</h1><hr>
+            <form style="margin-top: 3%; color: aliceblue;" onsubmit="return false">
+                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your first name" id="firstName"><br><br>
+                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your last name" id="lastName"><br><br>
+                <input style="font-size: 0.8vw;" type="email" placeholder="Enter your email" id="email"><br><br>
+                <input type="radio" id="male" name="gender"> Male
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="female" name="gender"> Female<br><br><br>
+                <input type="checkbox" id="newsletter" onclick="checkboxFunction()">&nbsp;Send me monthly newsletter<br><br><br>
+                <span>What is your question?</span><br><br>
+                <textarea style="font-size: 0.8vw;" id="question" rows="6" cols="50"></textarea><br><br>
+                <button style="font-size: 0.8vw;" onclick="sendContact()">Send</button>
+            </form>
+
+        </div>
+
+        <div style=" margin-left: 26%; padding-bottom: 2%; font-size: 1vw; text-align: center;" class=footer>
+            <p style="color: aquamarine; text-align: center; font-size: 1vw;">© 2022 Copyright by ERAY BERK DALKIRAN, All Rights Reserved.</p>
+        </div>
+
+
+
+        
+    </div>
+
+
+
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts.js">
+        
+    </script>
+</body>
+</html>

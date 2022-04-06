@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
+    <title>ErayBD's Blog Page</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <!--TELESCOPE LOGO-->
+        <div class="logo">
+            <a href="../index.html"><img id="telescope"
+            src="../images/telescope.png" alt="telescope picture" title="Go to Main"></a>
+        </div>
+
+        <!--MENU-->
+        <div class="menu">
+            <a href="../index.html"><h1 title="Go to Main" style="margin-left: 12%;" id="menuIn">Main</h1></a>
+            <a href="../topics.html"><h1 title="Go to Topics" style="margin-left: 30%;" id="menuIn">Topics</h1></a>
+            <a href="../quiz.html"><h1 title="Go to Quiz" style="margin-left: 50%;" id="menuIn">Quiz</h1></a>
+            <a href="../contact.html"><h1 title="Go to Contact" style="margin-left: 67%;" id="menuIn">Contact</h1></a>
+        </div>
+
+        <div style="height: auto;" id="sourceLink">
+            <a href="https://www.space.com/cubesats-monitor-harmful-gases-from-space"><p id="sourceLinkP" style="margin-left: 92%; padding-right: 3%; font-size: 1.5vw; display: none; color: goldenrod; position: absolute;">Link!</p></a>
+            <button style="margin-left: 90%; margin-top: 1%; position: absolute; font-size: 0.7vw; cursor: pointer;" id="buttonLink" type="button" onclick="document.getElementById('sourceLinkP').style.display='block'; document.getElementById('buttonLink').style.display='none'; ">Click Here for the Source!</button>
+        </div>
+
+    </div>
+
+    <!--CONTENT - LAST TOPIC-->
+    <div class="content_first">
+        <h1 style="margin: 0px; padding: 2%; text-align: center; color: goldenrod; font-size: 2vw;">
+            Using tiny satellites to monitor harmful gases from space (op-ed)</h1><hr>
+        
+        <!-- Content Picture -->
+        <div><img style="margin-top: 7%; border: 2px solid aliceblue;" id="content_picture" title="" src="https://cdn.mos.cms.futurecdn.net/z2zLJ3VaUDxaAPKa2CSWMY-320-80.jpg" alt=""></div>
+
+        <!-- Text -->
+        <p style="padding-left: 28%; font-size: 1.15vw;">
+        <i>The NACHOS system is paving a trail for tiny pollution-monitoring spacecraft.</i><br><br>
+        Steve Love is a physicist and remote sensing instrumentation scientist in the Space and Remote Sensing group at Los Alamos National Laboratory. This effort was made possible through an award from NASA's Earth Science Technology Office's In-Space Validation of Earth Science Technology (InVEST) program, and by the U.S. Department of Energy through its Laboratory Directed Research and Development program at Los Alamos. Love contributed this article to Space.com's Expert Voices: Op-Ed & Insights.
+
+        Earth's atmosphere is mostly composed of nitrogen and oxygen, but dilute trace gases, both from natural sources and human activities, play an important role in the environment, climate and human health. These gases include the more than 50 billion tons of greenhouse gases the world collectively emits into the atmosphere every year, including carbon dioxide, methane, nitrous oxide and others.  
+
+        But many other trace gases are also significant, such as nitrogen dioxide, which gives urban smog its familiar brown color; tropospheric ozone, which causes many of smog's negative health impacts; and sulfur dioxide, which causes acid rain. These are largely produced by human activity — power plants and fossil fuel-based vehicles — but volcanoes and agricultural activities are other sources.</p>
+
+        <!-- Content with Video -->
+        <div style="position: absolute;" class="content_second">
+            <p style="padding-top: 5%; padding: 3%; font-size: 1vw;">A key piece of successful pollution prevention strategies is identifying sources of these pollutant trace gases and understanding their chemical reactions in the atmosphere as they move downwind. A long-sought-after goal in this area has been to identify sources from space. While some existing satellites can monitor these gases on a coarse regional scale, none have the spatial resolution to see crucial finer-scale details, such as pollutant chemistry within cities, or the early sulfur dioxide emissions from awakening volcanoes.  
+
+                Furthermore, satellite instruments capable of measuring trace gases have traditionally been large, heavy and power hungry, requiring large satellite hosts that are expensive to develop and launch. This makes deploying a high-resolution, trace-gas monitoring capability using traditional technology a very expensive proposition.
+                
+                New technology developed at Los Alamos National Laboratory may provide a solution to that problem. The NanoSat Atmospheric Chemistry Hyperspectral Observation System, or NACHOS, is the first-ever cubesat-based hyperspectral imaging system that can compete with traditional large-satellite instruments in chemical detection applications. Hyperspectral imaging is conceptually similar to color imaging, except that instead of each pixel containing just the three familiar red, green and blue channels that mimic human vision, each pixel contains hundreds of wavelength bands, analyzing the light in great detail in order to spot the unique spectral fingerprint of each gas of interest.  
+                
+                The system uses spherical mirrors that are easy to manufacture, have high optical throughput (allowing a lot of light for maximum sensitivity) and can fit on a satellite that is roughly the size of a loaf of bread. Its high spatial resolution allows researchers to see gases not at a regional scale, but at the neighborhood scale, and could even see emissions from individual power plants from its low-Earth orbit vantage point more than 300 miles (480 kilometers) up.</p>
+
+        </div>
+
+        <div class="video">
+            <!-- <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/kOEDG3j1bjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <img style="width: 100%; height: 100%;" src="https://cdn.mos.cms.futurecdn.net/qTmvroik2NtHVGsfCHyyxF.jpg" alt="">
+        </div>
+
+        
+
+        <div style=" margin-left: 26%; margin-top: 40%; padding-bottom: 2%; font-size: 1vw; text-align: center;" class=footer>
+            <p style="color: aquamarine; text-align: center; font-size: 1vw;">© 2022 Copyright by ERAY BERK DALKIRAN, All Rights Reserved.</p>
+        </div>
+        
+
+
+        
+    </div>
+
+    
+
+
+
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts.js"></script>
+</body>
+</html>
