@@ -31,20 +31,35 @@
     <!--CONTACT-->
     <div class="content_first">
         
-        <div class="contact" style="text-align: center; font-size: 1vw;">
+        <div class="contact" ng-app="mimic" ng-controller="controller" style="text-align: center; font-size: 1vw;">
+
+            <div id="sideMessage" style="text-align: center; font-size: 1vw;">
+                <h2 style="padding: 0; margin: 0; color: aquamarine;"><u>Your Message</u></h2>
+                <br>
+
+                <p>Name: {{first_Name}}</p><br>
+                <p>Last Name: {{last_Name}}</p><br>
+                <p>E-Mail: {{e_mail}}</p><br>
+                <p>Your Message: {{m_essage}}</p>
+
+                
+            </div>
+
             <h1 style="padding: 0px; margin: 0px; margin-top: 2%; color: goldenrod; padding-bottom: 2%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Contact Form</h1><hr>
             <form style="margin-top: 3%; color: aliceblue;" onsubmit="return false">
-                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your first name" id="firstName"><br><br>
-                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your last name" id="lastName"><br><br>
-                <input style="font-size: 0.8vw;" type="email" placeholder="Enter your email" id="email"><br><br>
+                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your first name" id="firstName" ng-model="first_Name"><br><br>
+                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your last name" id="lastName" ng-model="last_Name"><br><br>
+                <input style="font-size: 0.8vw;" type="text" placeholder="Enter your email" id="email" ng-model="e_mail"><br><br>
                 <input type="radio" id="male" name="gender"> Male
                 &nbsp;&nbsp;&nbsp;
                 <input type="radio" id="female" name="gender"> Female<br><br><br>
-                <input type="checkbox" id="newsletter" onclick="checkboxFunction()">&nbsp;Send me monthly newsletter<br><br><br>
+                <input type="checkbox" id="newsletter" ng-model="news_letter" onclick="checkboxFunction()">&nbsp;Send me monthly newsletter<br><br><br>
                 <span>What is your question?</span><br><br>
-                <textarea style="font-size: 0.8vw;" id="question" rows="6" cols="50"></textarea><br><br>
+                <textarea type="text" ng-model="m_essage" style="font-size: 0.8vw;" id="question" rows="6" cols="50"></textarea><br><br>
                 <button style="font-size: 0.8vw;" onclick="sendContact()">Send</button>
             </form>
+
+            
 
         </div>
 
@@ -65,5 +80,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts.js"></script>
+
+    <script>
+        var app = angular.module('mimic', []);
+        app.controller('controller', function() {
+
+        });
+    </script>
+
 </body>
 </html>
